@@ -28,7 +28,7 @@ class startViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Scoring", style: .plain, target: self, action: #selector(handleScore))
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Scoring", style: .plain, target: self, action: #selector(handleScore))
         
         navigationItem.title = "Create New Preset"
     }
@@ -179,6 +179,13 @@ class startViewController: UIViewController {
                 self.view.layoutIfNeeded()
             })
         }
+    }
+    
+    @IBAction func savePresetTapped(_ sender: UIButton) {
+    }
+    
+    @IBAction func startScoringTapped(_ sender: UIButton) {
+        handleScore()
     }
     
     

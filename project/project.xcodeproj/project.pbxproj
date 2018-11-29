@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E9B3D65FECD51307F56DCE3 /* Pods_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A623C211348BA6B6D70C99 /* Pods_project.framework */; };
 		AD550AC22198B87900CEA4C2 /* ENDSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD550AC12198B87900CEA4C2 /* ENDSViewController.swift */; };
 		AD6ECACA219CF96B00733B5D /* ScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6ECAC9219CF96B00733B5D /* ScoreTableViewController.swift */; };
 		AD6ECACC219CFA7E00733B5D /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6ECACB219CFA7E00733B5D /* customCell.swift */; };
@@ -18,7 +17,10 @@
 		ADAE2E8521958FF300615F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAE2E8321958FF300615F42 /* LaunchScreen.storyboard */; };
 		ADAE2E8D2195927100615F42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADAE2E8C2195927100615F42 /* GoogleService-Info.plist */; };
 		ADAE2E8F2195F23B00615F42 /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE2E8E2195F23B00615F42 /* startViewController.swift */; };
-		ADAE2E9121961AB600615F42 /* scoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE2E9021961AB600615F42 /* scoreViewController.swift */; };
+		ADAE2E9121961AB600615F42 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		ADC267BE21AF7DB9009C5DBA /* ArrowCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33929FB219D22E500C1C3BD /* ArrowCountViewController.swift */; };
+		ADC267BF21AF7DBD009C5DBA /* ScoringMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB97072219CF26600362AFD /* ScoringMainViewController.swift */; };
+		ADC267C021AF7E04009C5DBA /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC267C121AF7E04009C5DBA /* GoogleToolboxForMac.framework */; };
 		B615CEB4219CE975000A823C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615CEB3219CE975000A823C /* Database.swift */; };
 		B615CEB6219CE9AC000A823C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615CEB5219CE9AC000A823C /* User.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,7 @@
 		ADAE2E8C2195927100615F42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADAE2E8E2195F23B00615F42 /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
 		ADB97072219CF26600362AFD /* ScoringMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringMainViewController.swift; sourceTree = "<group>"; };
+		ADC267C121AF7E04009C5DBA /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33929FB219D22E500C1C3BD /* ArrowCountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowCountViewController.swift; sourceTree = "<group>"; };
 		B3F7C790219E4B5E009F0C4C /* UITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F7C7A4219E513F009F0C4C /* projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9B3D65FECD51307F56DCE3 /* Pods_project.framework in Frameworks */,
+				ADC267C021AF7E04009C5DBA /* GoogleToolboxForMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +159,7 @@
 		CC2F5B7B37DEBE6CD46CBFCB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADC267C121AF7E04009C5DBA /* GoogleToolboxForMac.framework */,
 				B5A623C211348BA6B6D70C99 /* Pods_project.framework */,
 			);
 			name = Frameworks;
@@ -188,7 +192,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3F7C799219E4B5E009F0C4C /* Build configuration list for PBXNativeTarget "UITest" */;
 			buildPhases = (
-				B3F7C78C219E4B5E009F0C4C /* Sources */,
 				B3F7C78D219E4B5E009F0C4C /* Frameworks */,
 				B3F7C78E219E4B5E009F0C4C /* Resources */,
 			);
@@ -206,7 +209,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3F7C7AB219E5140009F0C4C /* Build configuration list for PBXNativeTarget "projectUITests" */;
 			buildPhases = (
-				B3F7C7A0219E513F009F0C4C /* Sources */,
 				B3F7C7A1219E513F009F0C4C /* Frameworks */,
 				B3F7C7A2219E513F009F0C4C /* Resources */,
 			);
@@ -353,11 +355,11 @@
 				ADAE2E7D21958FF300615F42 /* ViewController.swift in Sources */,
 				AD6ECACC219CFA7E00733B5D /* customCell.swift in Sources */,
 				AD6ECACA219CF96B00733B5D /* ScoreTableViewController.swift in Sources */,
-				B33929FC219D22E500C1C3BD /* ArrowCountViewController.swift in Sources */,
 				ADAE2E8F2195F23B00615F42 /* startViewController.swift in Sources */,
-				ADB97073219CF26600362AFD /* ScoringMainViewController.swift in Sources */,
 				ADAE2E7B21958FF300615F42 /* AppDelegate.swift in Sources */,
-				ADAE2E9121961AB600615F42 /* scoreViewController.swift in Sources */,
+				ADAE2E9121961AB600615F42 /* (null) in Sources */,
+				ADC267BF21AF7DBD009C5DBA /* ScoringMainViewController.swift in Sources */,
+				ADC267BE21AF7DB9009C5DBA /* ArrowCountViewController.swift in Sources */,
 				B615CEB6219CE9AC000A823C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
