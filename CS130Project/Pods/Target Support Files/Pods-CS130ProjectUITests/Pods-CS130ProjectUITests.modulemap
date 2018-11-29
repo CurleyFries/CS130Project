@@ -1,6 +1,0 @@
-framework module Pods_CS130ProjectUITests {
-  umbrella header "Pods-CS130ProjectUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
