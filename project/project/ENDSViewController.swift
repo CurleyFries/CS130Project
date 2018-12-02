@@ -33,6 +33,11 @@ class ENDSViewController: UIViewController {
     
     @IBAction func DelButtonTapped(_ sender: Any) {
         let curLabel = String(numberLabel.text!)
+        
+        if (curLabel == "") {
+            return;
+        }
+        
         if curLabel[curLabel.index(before: curLabel.endIndex)] != "0"
         {
         let index = curLabel.index(curLabel.startIndex, offsetBy: curLabel.count - 3)
@@ -44,6 +49,7 @@ class ENDSViewController: UIViewController {
             let newLabel = curLabel[..<index]
             numberLabel.text = String(newLabel)
         }
+    
     }
     
     

@@ -47,7 +47,7 @@ class ScoreTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let DvC = storyboard?.instantiateViewController(withIdentifier: "endsID") as! ENDSViewController
         
-        DvC.getname = "End X"
+        DvC.getname = "ENDS"
         self.navigationController?.pushViewController(DvC, animated: true)
     }
     
