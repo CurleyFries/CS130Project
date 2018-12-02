@@ -14,4 +14,9 @@ target 'project' do
   pod 'GoogleSignIn'
   pod 'GoogleUtilities'
 
+  target 'JournalTests' do
+    inherit! :search_paths
+    pod 'Firebase'
+  end
+
 end
