@@ -36,7 +36,7 @@ class projectUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let arrowCountLabel = app.staticTexts["arowCnt"]
+        let arrowCountLabel = app.staticTexts["arrowCnt"]
         app.buttons["add1"].tap()
         XCTAssertEqual(arrowCountLabel.value as! String, "1")
         let add3Button = app.buttons["add3"]
