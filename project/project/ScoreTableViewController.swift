@@ -21,11 +21,14 @@ class ScoreTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        cellData = [Cell.init(endLabel: "END:   0", scoreLabel: "Scores:   0", endTotal: "End total:   0", runTotal: "Run total:    0"), Cell.init(endLabel: "END:   0", scoreLabel: "Scores:   0", endTotal: "End total:   0", runTotal: "Run total:    0"), Cell.init(endLabel: "END:   0", scoreLabel: "Scores:   0", endTotal: "End total:   0", runTotal: "Run total:    0"), Cell.init(endLabel: "END:   0", scoreLabel: "Scores:   0", endTotal: "End total:   0", runTotal: "Run total:    0"), Cell.init(endLabel: "END:   0", scoreLabel: "Scores:   0", endTotal: "End total:   0", runTotal: "Run total:    0")]
+        let temp = Cell.init(endLabel: "END:   0", scoreLabel: "Scores:   0", endTotal: "End total:   0", runTotal: "Run total:    0")
+        cellData = [temp, temp, temp, temp, temp]
         
         self.tableView.register(customCell.self, forCellReuseIdentifier: "custom")
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        //self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 200
+        
+        
 
     }
     
@@ -36,12 +39,14 @@ class ScoreTableViewController: UITableViewController {
         cellTemp.endTotal = cellData[indexPath.row].endTotal
         cellTemp.runTotal = cellData[indexPath.row].runTotal
         
+        
         return cellTemp
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellData.count
     }
+    
 
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -34,7 +34,7 @@ class startViewController: UIViewController {
     }
     
     @objc func handleScore() {
-        let start = storyboard?.instantiateViewController(withIdentifier: "ScoreTableID") as! ScoreTableViewController
+        let start = storyboard?.instantiateViewController(withIdentifier: "NewScoringTableID") as! NewScoringTableViewController
         
         navigationController?.pushViewController(start, animated: true)
     }

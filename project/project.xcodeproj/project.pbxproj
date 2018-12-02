@@ -21,6 +21,15 @@
 		ADAE2E8D2195927100615F42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADAE2E8C2195927100615F42 /* GoogleService-Info.plist */; };
 		ADAE2E8F2195F23B00615F42 /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE2E8E2195F23B00615F42 /* startViewController.swift */; };
 		ADAE2E9121961AB600615F42 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		ADCB056F21B38390008FEDA1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB056D21B38390008FEDA1 /* TableViewCell.swift */; };
+		ADCB057021B38390008FEDA1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCB056E21B38390008FEDA1 /* TableViewCell.xib */; };
+		ADCB057421B3864F008FEDA1 /* NewScoringTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB057321B3864F008FEDA1 /* NewScoringTableViewController.swift */; };
+		ADCB057821B38D72008FEDA1 /* PresetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB057621B38D72008FEDA1 /* PresetTableViewCell.swift */; };
+		ADCB057921B38D72008FEDA1 /* PresetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCB057721B38D72008FEDA1 /* PresetTableViewCell.xib */; };
+		ADCB057B21B38E2A008FEDA1 /* ViewPresetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB057A21B38E2A008FEDA1 /* ViewPresetViewController.swift */; };
+		ADCB058221B399EA008FEDA1 /* ScoringRoundsViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB058121B399EA008FEDA1 /* ScoringRoundsViewViewController.swift */; };
+		ADCB058621B39A86008FEDA1 /* ScoringRoundsViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB058421B39A86008FEDA1 /* ScoringRoundsViewTableViewCell.swift */; };
+		ADCB058721B39A86008FEDA1 /* ScoringRoundsViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCB058521B39A86008FEDA1 /* ScoringRoundsViewTableViewCell.xib */; };
 		B615CEB4219CE975000A823C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615CEB3219CE975000A823C /* Database.swift */; };
 		B615CEB6219CE9AC000A823C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615CEB5219CE9AC000A823C /* User.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +67,15 @@
 		ADAE2E8C2195927100615F42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADAE2E8E2195F23B00615F42 /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
 		ADB97072219CF26600362AFD /* ScoringMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringMainViewController.swift; sourceTree = "<group>"; };
+		ADCB056D21B38390008FEDA1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		ADCB056E21B38390008FEDA1 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		ADCB057321B3864F008FEDA1 /* NewScoringTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScoringTableViewController.swift; sourceTree = "<group>"; };
+		ADCB057621B38D72008FEDA1 /* PresetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetTableViewCell.swift; sourceTree = "<group>"; };
+		ADCB057721B38D72008FEDA1 /* PresetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresetTableViewCell.xib; sourceTree = "<group>"; };
+		ADCB057A21B38E2A008FEDA1 /* ViewPresetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresetViewController.swift; sourceTree = "<group>"; };
+		ADCB058121B399EA008FEDA1 /* ScoringRoundsViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringRoundsViewViewController.swift; sourceTree = "<group>"; };
+		ADCB058421B39A86008FEDA1 /* ScoringRoundsViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringRoundsViewTableViewCell.swift; sourceTree = "<group>"; };
+		ADCB058521B39A86008FEDA1 /* ScoringRoundsViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoringRoundsViewTableViewCell.xib; sourceTree = "<group>"; };
 		B33929FB219D22E500C1C3BD /* ArrowCountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowCountViewController.swift; sourceTree = "<group>"; };
 		B3F7C790219E4B5E009F0C4C /* UITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F7C7A4219E513F009F0C4C /* projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +145,9 @@
 		ADAE2E7921958FF300615F42 /* project */ = {
 			isa = PBXGroup;
 			children = (
+				ADCB058321B39A64008FEDA1 /* ScoringCell */,
+				ADCB057521B38D39008FEDA1 /* PresetCell */,
+				ADCB056A21B38344008FEDA1 /* Cell */,
 				ADAE2E7A21958FF300615F42 /* AppDelegate.swift */,
 				ADAE2E7C21958FF300615F42 /* ViewController.swift */,
 				ADAE2E8E2195F23B00615F42 /* startViewController.swift */,
@@ -136,6 +157,9 @@
 				B33929FB219D22E500C1C3BD /* ArrowCountViewController.swift */,
 				AD6ECACB219CFA7E00733B5D /* customCell.swift */,
 				ADB97072219CF26600362AFD /* ScoringMainViewController.swift */,
+				ADCB057321B3864F008FEDA1 /* NewScoringTableViewController.swift */,
+				ADCB057A21B38E2A008FEDA1 /* ViewPresetViewController.swift */,
+				ADCB058121B399EA008FEDA1 /* ScoringRoundsViewViewController.swift */,
 				ADAE2E8121958FF300615F42 /* Assets.xcassets */,
 				ADAE2E8321958FF300615F42 /* LaunchScreen.storyboard */,
 				ADAE2E8621958FF300615F42 /* Info.plist */,
@@ -144,6 +168,33 @@
 				B615CEB5219CE9AC000A823C /* User.swift */,
 			);
 			path = project;
+			sourceTree = "<group>";
+		};
+		ADCB056A21B38344008FEDA1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ADCB056D21B38390008FEDA1 /* TableViewCell.swift */,
+				ADCB056E21B38390008FEDA1 /* TableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ADCB057521B38D39008FEDA1 /* PresetCell */ = {
+			isa = PBXGroup;
+			children = (
+				ADCB057621B38D72008FEDA1 /* PresetTableViewCell.swift */,
+				ADCB057721B38D72008FEDA1 /* PresetTableViewCell.xib */,
+			);
+			path = PresetCell;
+			sourceTree = "<group>";
+		};
+		ADCB058321B39A64008FEDA1 /* ScoringCell */ = {
+			isa = PBXGroup;
+			children = (
+				ADCB058421B39A86008FEDA1 /* ScoringRoundsViewTableViewCell.swift */,
+				ADCB058521B39A86008FEDA1 /* ScoringRoundsViewTableViewCell.xib */,
+			);
+			path = ScoringCell;
 			sourceTree = "<group>";
 		};
 		B3F7C7A5219E513F009F0C4C /* projectUITests */ = {
@@ -272,7 +323,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCB057921B38D72008FEDA1 /* PresetTableViewCell.xib in Resources */,
+				ADCB058721B39A86008FEDA1 /* ScoringRoundsViewTableViewCell.xib in Resources */,
 				ADAE2E8521958FF300615F42 /* LaunchScreen.storyboard in Resources */,
+				ADCB057021B38390008FEDA1 /* TableViewCell.xib in Resources */,
 				ADAE2E8D2195927100615F42 /* GoogleService-Info.plist in Resources */,
 				ADAE2E8221958FF300615F42 /* Assets.xcassets in Resources */,
 				ADAE2E8021958FF300615F42 /* Main.storyboard in Resources */,
@@ -348,15 +402,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCB058221B399EA008FEDA1 /* ScoringRoundsViewViewController.swift in Sources */,
+				ADCB057421B3864F008FEDA1 /* NewScoringTableViewController.swift in Sources */,
 				B615CEB4219CE975000A823C /* Database.swift in Sources */,
 				AD550AC22198B87900CEA4C2 /* ENDSViewController.swift in Sources */,
+				ADCB058621B39A86008FEDA1 /* ScoringRoundsViewTableViewCell.swift in Sources */,
+				ADCB057B21B38E2A008FEDA1 /* ViewPresetViewController.swift in Sources */,
 				ADAE2E7D21958FF300615F42 /* ViewController.swift in Sources */,
+				ADCB057821B38D72008FEDA1 /* PresetTableViewCell.swift in Sources */,
 				AD6ECACC219CFA7E00733B5D /* customCell.swift in Sources */,
 				AD6ECACA219CF96B00733B5D /* ScoreTableViewController.swift in Sources */,
 				ADAE2E8F2195F23B00615F42 /* startViewController.swift in Sources */,
 				05A72F8E21AF7F2D002A8028 /* ArrowCountViewController.swift in Sources */,
 				ADAE2E7B21958FF300615F42 /* AppDelegate.swift in Sources */,
 				ADAE2E9121961AB600615F42 /* (null) in Sources */,
+				ADCB056F21B38390008FEDA1 /* TableViewCell.swift in Sources */,
 				B615CEB6219CE9AC000A823C /* User.swift in Sources */,
 				057A115621AF676200F3F701 /* ScoringMainViewController.swift in Sources */,
 			);

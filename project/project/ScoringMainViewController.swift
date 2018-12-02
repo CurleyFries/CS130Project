@@ -17,6 +17,9 @@ class ScoringMainViewController: UIViewController {
     }
     
     @IBAction func handleViewPastScoringRounds(_ sender: UIButton) {
+        let start = storyboard?.instantiateViewController(withIdentifier: "ScoringRoundsID") as! ScoringRoundsViewViewController
+        
+        navigationController?.pushViewController(start, animated: true)
     }
     
     
@@ -28,8 +31,15 @@ class ScoringMainViewController: UIViewController {
     
     
     @IBAction func handleViewPresets(_ sender: UIButton) {
+        let start = storyboard?.instantiateViewController(withIdentifier: "ViewPresetID") as! ViewPresetViewController
+        
+        navigationController?.pushViewController(start, animated: true)
     }
+    
     @IBAction func handleArrowCount(_ sender: UIButton) {
+        let start = storyboard?.instantiateViewController(withIdentifier: "ArrowCountID") as! ArrowCountViewController
+        
+        navigationController?.pushViewController(start, animated: true)
     }
     
     override func viewDidLoad() {
