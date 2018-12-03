@@ -29,7 +29,7 @@ class ScoringRoundsViewViewController: UIViewController, UITableViewDelegate, UI
         let nibName = UINib(nibName: "ScoringRoundsViewTableViewCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "ScoringRoundsViewTableViewCellID")
         
-        self.title = "Past Scoring Rounds"
+        self.title = "View Past Scoring Rounds"
     }
 
     override func didReceiveMemoryWarning() {
