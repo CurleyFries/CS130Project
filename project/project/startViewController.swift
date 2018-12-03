@@ -28,13 +28,13 @@ class startViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Scoring", style: .plain, target: self, action: #selector(handleScore))
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Scoring", style: .plain, target: self, action: #selector(handleScore))
         
         navigationItem.title = "Create New Preset"
     }
     
     @objc func handleScore() {
-        let start = storyboard?.instantiateViewController(withIdentifier: "ScoreTableID") as! ScoreTableViewController
+        let start = storyboard?.instantiateViewController(withIdentifier: "NewScoringTableID") as! NewScoringTableViewController
         
         navigationController?.pushViewController(start, animated: true)
     }
@@ -181,5 +181,8 @@ class startViewController: UIViewController {
         }
     }
     
+    @IBAction func startScoringTapped(_ sender: UIButton) {
+        handleScore()
+    }
     
 }

@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "05D1423021AFAE52007E0A28"
-               BuildableName = "JournalTests.xctest"
+               BuildableName = "JournalTests"
                BlueprintName = "JournalTests"
                ReferencedContainer = "container:project.xcodeproj">
             </BuildableReference>
@@ -52,9 +52,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "05BB8EE221B46B9700EBDF81"
+               BlueprintIdentifier = "0546904821B4C30400677E86"
                BuildableName = "ScoringRoundTests.xctest"
                BlueprintName = "ScoringRoundTests"
+               ReferencedContainer = "container:project.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B3F7C78F219E4B5E009F0C4C"
+               BuildableName = "UITest.xctest"
+               BlueprintName = "UITest"
                ReferencedContainer = "container:project.xcodeproj">
             </BuildableReference>
          </TestableReference>
