@@ -16,9 +16,9 @@ class JournalsViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        date = ["8/12", "9/12"]
-        journalTitle = ["Title 1", "Title 2"]
-        journalContent = ["Journal Content 1", "Journal Content 2"]
+        date = ["12/1", "9/12", "8/12"]
+        journalTitle = ["Tournament Reflection", "Stretchbanding", "Specific Physical Training"]
+        journalContent = ["I shot well. Strong bow arm and clean release.", "Journal Content 1", "Journal Content 2"]
         // Do any additional setup after loading the view.
     }
     
