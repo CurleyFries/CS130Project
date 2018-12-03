@@ -831,7 +831,7 @@
                                         </constraints>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="M">
+                                                <fragment content="0">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <font key="NSFont" metaFont="system" size="15"/>
@@ -899,6 +899,9 @@
                                         <state key="normal" title="Submit">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="submitButtonTapped:" destination="Jpx-wM-EMx" eventType="touchUpInside" id="Zvo-te-ial"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLL-YE-ov7">
                                         <rect key="frame" x="285" y="352" width="90" height="70"/>
@@ -956,7 +959,7 @@
                                             <constraint firstAttribute="height" constant="70" id="qJJ-pw-myH"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="0"/>
+                                        <state key="normal" title="10"/>
                                         <connections>
                                             <action selector="numberTapped:" destination="Jpx-wM-EMx" eventType="touchUpInside" id="PP0-eI-wmF"/>
                                         </connections>

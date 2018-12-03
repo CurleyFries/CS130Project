@@ -8,14 +8,15 @@
 
 import UIKit
 
-class NewScoringTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class NewScoringTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DataEnteredDelegate {
+    
 
     @IBOutlet weak var tableView: UITableView!
     
-    let endData = ["END:   0", "END:   0", "END:   0", "END:   0", "END:   0"]
+    var endData = ["END:   0", "END:   0", "END:   0", "END:   0", "END:   0"]
     let scoreData = ["Scores: 0", "Scores: 0", "Scores: 0", "Scores: 0", "Scores: 0",]
-    let endTotalData = ["End total:   0", "End total:   0", "End total:   0", "End total:   0", "End total:   0"]
-    let runTotalData = ["Run total:    0", "Run total:    0", "Run total:    0", "Run total:    0", "Run total:    0"]
+    var endTotalData = [0,0,0,0,0]
+    var runTotalData = [0,0,0,0,0]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,7 @@ class NewScoringTableViewController: UIViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCellID", for: indexPath) as! TableViewCell
         
-        cell.commonInit(endData[indexPath.item], score: scoreData[indexPath.item], eTotal: endTotalData[indexPath.item], rTotal: runTotalData[indexPath.item])
+        cell.commonInit(endData[indexPath.item], score: scoreData[indexPath.item], eTotal: "End Total:  " + String(endTotalData[indexPath.item]), rTotal: "Run Total:  " + String(runTotalData[indexPath.item]))
         
         cell.backgroundColor = UIColor(red: 255/255, green: 132/255, blue: 132/255, alpha: 1.0)
         cell.endLabel.textColor = .white
@@ -56,6 +57,8 @@ class NewScoringTableViewController: UIViewController, UITableViewDelegate, UITa
         let DvC = storyboard?.instantiateViewController(withIdentifier: "endsID") as! ENDSViewController
         
         DvC.getname = "ENDS"
+        DvC.end = indexPath.row
+        DvC.delegate = self
         self.navigationController?.pushViewController(DvC, animated: true)
     }
 
@@ -64,6 +67,24 @@ class NewScoringTableViewController: UIViewController, UITableViewDelegate, UITa
         // Dispose of any resources that can be recreated.
     }
     
+    func setEnd(argu: String, end: Int, scores: Array<Int>) {
+        endData[end] = argu
+        var endScore = 0
+        for score in scores {
+            endScore+=score
+        }
+        endTotalData[end] = endScore
+        var runningTotal = 0
+        var index = 0
+        while index <= end {
+            runningTotal += endTotalData[index]
+            index+=1
+        }
+        
+        runTotalData[end] = runningTotal
+        
+        tableView.reloadData()
+    }
     
 
 }

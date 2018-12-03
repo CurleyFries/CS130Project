@@ -8,9 +8,15 @@
 
 import UIKit
 
+protocol DataEnteredDelegate: class {
+    func setEnd(argu: String, end: Int, scores: Array<Int>)
+}
+
 class ENDSViewController: UIViewController {
-    
+    weak var delegate: DataEnteredDelegate? = nil
     var getname	 = "Default"
+    var end = Int()
+    var scoreArray:Array<Int> = []
     @IBOutlet weak var endName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +32,7 @@ class ENDSViewController: UIViewController {
     
 
     @IBOutlet weak var numberLabel: UILabel!
+
     
     @IBAction func ClrButtonTapped(_ sender: UIButton) {
         numberLabel.text = ""
@@ -54,7 +61,21 @@ class ENDSViewController: UIViewController {
     
     
     @IBAction func numberTapped(_ sender: UIButton) {
-        numberLabel.text = numberLabel.text! + "  " + (sender.titleLabel?.text!)!
+        if (sender.titleLabel?.text == "X") {
+            return;
+        }
+        
+        numberLabel.text = numberLabel.text! + "    " + (sender.titleLabel?.text!)!
+        scoreArray.append(Int((sender.titleLabel?.text)!)!)
     }
 
+    @IBAction func submitButtonTapped(_ sender: UIButton) {
+
+        
+        delegate?.setEnd(argu: ("END:  " + numberLabel.text!), end: end, scores: scoreArray)
+       navigationController?.popViewController(animated: true)
+
+    }
+    
+    
 }
