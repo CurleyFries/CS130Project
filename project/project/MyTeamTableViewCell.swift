@@ -13,6 +13,7 @@ class MyTeamTableViewCell: UITableViewCell {
     @IBOutlet weak var teamImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var divisionLabel: UILabel!
+    @IBOutlet weak var positionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

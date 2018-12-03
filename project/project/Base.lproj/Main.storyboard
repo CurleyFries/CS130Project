@@ -1614,7 +1614,14 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Division" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90m-ai-9ak">
-                                                    <rect key="frame" x="162" y="48" width="180" height="21"/>
+                                                    <rect key="frame" x="162" y="34" width="180" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Position" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSS-jQ-RWl">
+                                                    <rect key="frame" x="203" y="63" width="99" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1626,6 +1633,7 @@
                                         <connections>
                                             <outlet property="divisionLabel" destination="90m-ai-9ak" id="AYF-0R-33A"/>
                                             <outlet property="nameLabel" destination="T3A-LG-3EG" id="3xf-qt-Thw"/>
+                                            <outlet property="positionLabel" destination="rSS-jQ-RWl" id="wQt-mH-FGr"/>
                                             <outlet property="teamImageView" destination="y74-KY-bRD" id="Vq4-df-0b9"/>
                                         </connections>
                                     </tableViewCell>
@@ -1651,7 +1659,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8P-6d-eqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1366" y="5378"/>
+            <point key="canvasLocation" x="-1367.2" y="5377.9610194902552"/>
         </scene>
         <!--Submit Requirements-->
         <scene sceneID="Qox-Dd-JZS">
@@ -1679,11 +1687,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtS-1H-2Nd">
-                                <rect key="frame" x="0.0" y="543" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="543" width="375" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.076417694140000006" green="0.54404145079999999" blue="0.082868270039999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Submit Requirement"/>
+                                <connections>
+                                    <action selector="submitReqButtonPushed:" destination="r5s-0C-cDn" eventType="touchUpInside" id="J01-AA-BI6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sQ-yx-OiM">
                                 <rect key="frame" x="0.0" y="393" width="375" height="74"/>
@@ -1697,12 +1708,13 @@
                         <viewLayoutGuide key="safeArea" id="zvd-ri-3rX"/>
                     </view>
                     <connections>
+                        <outlet property="submitReq" destination="WtS-1H-2Nd" id="MXO-l1-nZg"/>
                         <segue destination="asx-Hc-G8Y" kind="show" identifier="" id="zgd-mC-JxK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHl-EM-sLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-665" y="6224"/>
+            <point key="canvasLocation" x="-666.39999999999998" y="6223.5382308845583"/>
         </scene>
         <!--Submit Requirement View Controller-->
         <scene sceneID="o5q-ge-eO0">
@@ -1719,23 +1731,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Division" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSk-zF-sXT">
-                                <rect key="frame" x="157" y="308" width="60" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Division" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSk-zF-sXT">
+                                <rect key="frame" x="67" y="296" width="240" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77x-8p-vkv">
-                                <rect key="frame" x="0.0" y="431" width="375" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Submit Requirements"/>
-                                <connections>
-                                    <segue destination="r5s-0C-cDn" kind="show" id="Ozp-c8-P4j"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLB-CF-hcJ">
                                 <rect key="frame" x="0.0" y="519" width="375" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1747,6 +1749,30 @@
                                 <rect key="frame" x="67" y="42" width="240" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3d-1a-y7y">
+                                <rect key="frame" x="0.0" y="364" width="375" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="View Requirements"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Position" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b47-AE-cfo">
+                                <rect key="frame" x="138" y="323" width="99" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77x-8p-vkv">
+                                <rect key="frame" x="0.0" y="445" width="375" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Submit Requirements"/>
+                                <connections>
+                                    <segue destination="r5s-0C-cDn" kind="show" id="Ozp-c8-P4j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="RIo-x7-gTb"/>
@@ -1754,7 +1780,9 @@
                     <connections>
                         <outlet property="divisionLabel" destination="ZSk-zF-sXT" id="BtE-dn-i75"/>
                         <outlet property="nameLabel" destination="rzA-EY-klq" id="YMX-Wg-A0v"/>
+                        <outlet property="positionLabel" destination="b47-AE-cfo" id="RDL-fn-66D"/>
                         <outlet property="teamLogo" destination="bkj-Au-rf4" id="EvK-fQ-lmw"/>
+                        <outlet property="viewReqsButton" destination="G3d-1a-y7y" id="brj-Mx-L5M"/>
                         <segue destination="r5s-0C-cDn" kind="show" id="ad9-vN-HuI"/>
                     </connections>
                 </viewController>
@@ -1832,7 +1860,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="qWw-bb-SSi"/>
-        <segue reference="nlO-AE-Rpk"/>
+        <segue reference="ad9-vN-HuI"/>
         <segue reference="cd8-d4-3FS"/>
         <segue reference="RcC-sW-Hul"/>
         <segue reference="LSr-IE-oXi"/>

@@ -12,7 +12,8 @@ class attachDataViewController: UIViewController {
     
     var journal = String()
     
-
+    @IBOutlet weak var submitReq: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,4 +35,8 @@ class attachDataViewController: UIViewController {
         
     }
 
+    @IBAction func submitReqButtonPushed(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+    }
 }
