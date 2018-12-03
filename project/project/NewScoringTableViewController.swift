@@ -10,11 +10,12 @@ import UIKit
 
 class NewScoringTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DataEnteredDelegate {
     
+    
 
     @IBOutlet weak var tableView: UITableView!
     
-    var endData = ["END:   0", "END:   0", "END:   0", "END:   0", "END:   0"]
-    let scoreData = ["Scores: 0", "Scores: 0", "Scores: 0", "Scores: 0", "Scores: 0",]
+    let endData = ["END:   0", "END:   1", "END:   2", "END:   3", "END:   4"]
+    var scoreData = ["Scores: 0", "Scores: 0", "Scores: 0", "Scores: 0", "Scores: 0",]
     var endTotalData = [0,0,0,0,0]
     var runTotalData = [0,0,0,0,0]
     
@@ -56,7 +57,7 @@ class NewScoringTableViewController: UIViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let DvC = storyboard?.instantiateViewController(withIdentifier: "endsID") as! ENDSViewController
         
-        DvC.getname = "ENDS"
+        DvC.getname = "Scores"
         DvC.end = indexPath.row
         DvC.delegate = self
         self.navigationController?.pushViewController(DvC, animated: true)
@@ -68,7 +69,7 @@ class NewScoringTableViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func setEnd(argu: String, end: Int, scores: Array<Int>) {
-        endData[end] = argu
+        scoreData[end] = argu
         var endScore = 0
         for score in scores {
             endScore+=score
@@ -82,6 +83,7 @@ class NewScoringTableViewController: UIViewController, UITableViewDelegate, UITa
         }
         
         runTotalData[end] = runningTotal
+        
         
         tableView.reloadData()
     }

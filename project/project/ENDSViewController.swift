@@ -72,7 +72,7 @@ class ENDSViewController: UIViewController {
     @IBAction func submitButtonTapped(_ sender: UIButton) {
 
         
-        delegate?.setEnd(argu: ("END:  " + numberLabel.text!), end: end, scores: scoreArray)
+        delegate?.setEnd(argu: ("Scores:  " + numberLabel.text!), end: end, scores: scoreArray)
        navigationController?.popViewController(animated: true)
 
     }

@@ -1348,7 +1348,7 @@
                                     <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="add3ArrowBtn:" destination="qwp-NE-m5m" eventType="touchUpInside" id="9gi-qc-682"/>
+                                    <action selector="add3ArrowBtn:" destination="qwp-NE-m5m" eventType="touchUpInside" id="zMs-Qj-V0n"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laK-j8-CaL">
@@ -1364,7 +1364,7 @@
                                     <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="sub1ArrowBtn:" destination="qwp-NE-m5m" eventType="touchUpInside" id="u23-WB-H92"/>
+                                    <action selector="sub1ArrowBtn:" destination="qwp-NE-m5m" eventType="touchUpInside" id="Ukr-MA-EZn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6r-HE-4bX">
@@ -1380,7 +1380,7 @@
                                     <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="add6ArrowBtn:" destination="qwp-NE-m5m" eventType="touchUpInside" id="jBX-WJ-aQD"/>
+                                    <action selector="sub6ArrowBtn:" destination="qwp-NE-m5m" eventType="touchUpInside" id="yRV-bP-PAo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-0z-8v4">
@@ -1394,9 +1394,6 @@
                                 <state key="normal" title="Reset Count">
                                     <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="resetArrowCntBtn:" destination="qwp-NE-m5m" eventType="touchUpInside" id="e8s-28-cLQ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYR-P6-U6X">
                                 <rect key="frame" x="66" y="250" width="50" height="50"/>
@@ -1411,7 +1408,7 @@
                                     <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="sub6ArrowBtn:" destination="qwp-NE-m5m" eventType="touchUpInside" id="OfI-ri-u58"/>
+                                    <action selector="add1ArrowBtn:" destination="qwp-NE-m5m" eventType="touchUpInside" id="qgT-hd-bKT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aww-OP-Mbd">
@@ -1427,7 +1424,7 @@
                                     <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="add1ArrowBtn:" destination="qwp-NE-m5m" eventType="touchUpInside" id="lfe-Nt-JZA"/>
+                                    <action selector="add6ArrowBtn:" destination="qwp-NE-m5m" eventType="touchUpInside" id="dQT-3a-g5m"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IQ-OZ-O11">
@@ -1443,7 +1440,7 @@
                                     <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="sub3ArrowBtn:" destination="qwp-NE-m5m" eventType="touchUpInside" id="JgC-ON-IDG"/>
+                                    <action selector="sub3ArrowBtn:" destination="qwp-NE-m5m" eventType="touchUpInside" id="RCl-Us-4IA"/>
                                 </connections>
                             </button>
                         </subviews>
