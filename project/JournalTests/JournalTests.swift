@@ -16,7 +16,19 @@ class JournalTests: XCTestCase {
 	private let TEST_TEXT = "text"
 	private let TEST_FUTURE_DATE = Date.distantFuture
 	private let TEST_PAST_DATE = Date.distantPast
-	private let TEST_SCORING_ROUND = ScoringRound()
+	private let TEST_PRESET = PresetBuilder(
+		numEnds: 1,
+		arrowsPerEnd: 1,
+		targetSize: 1,
+		distanceToTarget: 1)
+	.division(division: Division.Barebow)
+	.weather(weather: "Sunny")
+	.build()
+	private var TEST_SCORING_ROUND: ScoringRound!
+
+    override func setUp() {
+		TEST_SCORING_ROUND = ScoringRound(title: TEST_TITLE, date: TEST_FUTURE_DATE, preset: TEST_PRESET)
+    }
 
 	/**
 	 Test the builder class to make sure that the Journal class gets instantiated properly

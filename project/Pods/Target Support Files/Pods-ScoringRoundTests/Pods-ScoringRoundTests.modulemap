@@ -1,0 +1,6 @@
+framework module Pods_ScoringRoundTests {
+  umbrella header "Pods-ScoringRoundTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -28,7 +28,11 @@ public class Journal: DatedEntry {
 	/**
 	 The Journal class should be instantiated using a JournalBuilder to make
 	 instantiation easier in addition to clearly marking required fields and
-	 optional fields.
+	 optional fields. This constructor should ONLY be called by the
+	 JournalBuilder class.
+
+	 - Parameter builder: JounalBuilder class that contains the field data
+	                      to create the Journal class
 	*/
 	init(builder: JournalBuilder) {
 		self.title = builder.title
