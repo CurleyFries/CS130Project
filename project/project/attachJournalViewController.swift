@@ -48,11 +48,11 @@ class attachJournalViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let content = journalContent[indexPath.row]
+        //let content = journalContent[indexPath.row]
         
-        let DvC = attachDataViewController()
-        DvC.journal = content as! String
-        DvC.performSegue(withIdentifier: "unwindToattachDataViewController", sender: self)
+        //let DvC = attachDataViewController()
+        //DvC.journal = content as! String
+        self.performSegue(withIdentifier: "unwindAttachData", sender: nil)
         
     }
 }

@@ -14,16 +14,18 @@ class MyTeamsViewController: UIViewController, UITableViewDelegate, UITableViewD
     var teamName:NSArray = []
     var teamDivision:NSArray = []
     var teamID:NSArray = []
+    var teamPosition:NSArray = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        teamName = ["UCLA Club Archery"]
-        teamImage = [UIImage(named: "UCLALogo.jpg")!]
-        teamDivision = ["Recurve"]
-        teamID = [001]
+        teamName = ["UCLA Club Archery", "Not UCLA", "Maybe UCLA", "Its UCLA"]
+        teamImage = [UIImage(named: "UCLALogo.jpg")!, UIImage(named: "UCLALogo.jpg")!, UIImage(named: "UCLALogo.jpg")!, UIImage(named: "UCLALogo.jpg")!]
+        teamDivision = ["Recurve", "Barebow", "Bowhunter","Compound"]
+        teamID = [001, 002, 003, 004]
+        teamPosition = ["Member", "Manager", "Member", "Member"]
     }
     
 
@@ -47,6 +49,7 @@ class MyTeamsViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.teamImageView.image = teamImage[indexPath.row] as! UIImage
         cell.nameLabel.text! = teamName[indexPath.row] as! String
         cell.divisionLabel.text! = teamDivision[indexPath.row] as! String
+        cell.positionLabel.text! = teamPosition[indexPath.row] as! String
         
         return cell
     }
@@ -58,6 +61,7 @@ class MyTeamsViewController: UIViewController, UITableViewDelegate, UITableViewD
         DvC.getDivision = teamDivision[indexPath.row] as! String
         DvC.getImage = teamImage[indexPath.row] as! UIImage
         DvC.getTeamName = teamName[indexPath.row] as! String
+        DvC.getPosition = teamPosition[indexPath.row] as! String
     
         self.navigationController?.pushViewController(DvC, animated: true)    }
 }

@@ -13,11 +13,16 @@ class SubmitRequirementViewController: UIViewController {
     var getTeamName = String()
     var getImage = UIImage()
     var getDivision = String()
+    var getPosition = String()
     
     
     @IBOutlet weak var teamLogo: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var divisionLabel: UILabel!
+    
+    @IBOutlet weak var positionLabel: UILabel!
+    
+    @IBOutlet weak var viewReqsButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +31,12 @@ class SubmitRequirementViewController: UIViewController {
         teamLogo.image = getImage
         nameLabel.text! = getTeamName
         divisionLabel.text! = getDivision
+        positionLabel.text! = getPosition
         navigationItem.title = getTeamName
+        
+        if positionLabel.text != "Manager" {
+            viewReqsButton.isHidden = true
+        }
     }
     
 
