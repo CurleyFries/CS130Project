@@ -20,10 +20,10 @@ class MyTeamsViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         // Do any additional setup after loading the view.
         
-        teamName = ["UCLA Club Archery"]
-        teamImage = [UIImage(named: "UCLALogo.jpg")!]
-        teamDivision = ["Recurve"]
-        teamID = [001]
+        teamName = ["UCLA Club Archery", "Not UCLA", "Maybe UCLA", "Its UCLA"]
+        teamImage = [UIImage(named: "UCLALogo.jpg")!, UIImage(named: "UCLALogo.jpg")!, UIImage(named: "UCLALogo.jpg")!, UIImage(named: "UCLALogo.jpg")!]
+        teamDivision = ["Recurve", "Barebow", "Bowhunter","Compound"]
+        teamID = [001, 002, 003, 004]
     }
     
 
