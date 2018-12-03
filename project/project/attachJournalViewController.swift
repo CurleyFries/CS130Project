@@ -43,6 +43,8 @@ class attachJournalViewController: UIViewController, UITableViewDelegate, UITabl
         cell.dateLabel.text! = date[indexPath.row] as! String
         cell.titleLabel.text! = journalTitle[indexPath.row] as! String
         
+        cell.backgroundColor = UIColor(red: 255/255, green: 132/255, blue: 132/255, alpha: 1.0)
+        
         return cell
     }
     

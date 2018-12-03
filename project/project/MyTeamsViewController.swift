@@ -51,6 +51,7 @@ class MyTeamsViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.divisionLabel.text! = teamDivision[indexPath.row] as! String
         cell.positionLabel.text! = teamPosition[indexPath.row] as! String
         
+        cell.backgroundColor = UIColor(red: 255/255, green: 132/255, blue: 132/255, alpha:1.0)
         return cell
     }
     
