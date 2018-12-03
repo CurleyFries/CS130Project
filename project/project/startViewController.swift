@@ -24,13 +24,25 @@ class startViewController: UIViewController {
     @IBOutlet var arrowButtons: [UIButton]!
     @IBOutlet weak var arrowButtonSelect: UIButton!
     
-    
+    var fromPreset: Bool = false
+    var getPreset = Bool()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Scoring", style: .plain, target: self, action: #selector(handleScore))
+        fromPreset = getPreset
         
-        navigationItem.title = "Create New Preset"
+        if !fromPreset {
+            navigationItem.title = "Create New Preset"
+        }
+        else {
+            navigationItem.title = "Scoring From Preset"
+            selectButton.setTitle("Recurve", for: .normal)
+            distanceButtonSelect.setTitle("18m", for: .normal)
+            targetSizeButton.setTitle("40cm", for: .normal)
+            arrowButtonSelect.setTitle("3", for: .normal)
+            numberLabel.text = String(5)
+        }
     }
     
     @objc func handleScore() {

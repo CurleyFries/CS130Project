@@ -12,11 +12,11 @@ class ViewPresetViewController: UIViewController, UITableViewDelegate, UITableVi
 
     @IBOutlet weak var tableView: UITableView!
     
-    let divData = ["Division:          0", "Division:          0", "Division:          0", "Division:          0", "Division:          0"]
-    let disData = ["Distance:          0", "Distance:          0", "Distance:          0", "Distance:          0", "Distance:          0"]
-    let targetSizeData = ["Target Size:       0", "Target Size:       0", "Target Size:       0", "Target Size:       0", "Target Size:       0"]
-    let endsData = ["ENDS:              0", "ENDS:              0", "ENDS:              0", "ENDS:              0", "ENDS:              0"]
-    let arrowData = ["Arrow PER:         0", "Arrow PER:         0", "Arrow PER:         0", "Arrow PER:         0", "Arrow PER:         0"]
+    let divData = ["Division:          Recurve", "Division:          0", "Division:          0", "Division:          0", "Division:          0"]
+    let disData = ["Distance:          18m", "Distance:          0", "Distance:          0", "Distance:          0", "Distance:          0"]
+    let targetSizeData = ["Target Size:       40cm", "Target Size:       0", "Target Size:       0", "Target Size:       0", "Target Size:       0"]
+    let endsData = ["ENDS:              5", "ENDS:              0", "ENDS:              0", "ENDS:              0", "ENDS:              0"]
+    let arrowData = ["Arrow PER:         3", "Arrow PER:         0", "Arrow PER:         0", "Arrow PER:         0", "Arrow PER:         0"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +61,7 @@ class ViewPresetViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let DvC = storyboard?.instantiateViewController(withIdentifier: "startID") as! startViewController
+        DvC.getPreset = true
         
         self.navigationController?.pushViewController(DvC, animated: true)
     }

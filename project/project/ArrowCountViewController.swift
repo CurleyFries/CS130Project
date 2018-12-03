@@ -25,7 +25,7 @@ class ArrowCountViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        arrowCount = 0
+        arrowCount = 15
         arrowLabel.text = String(arrowCount)
     }
     

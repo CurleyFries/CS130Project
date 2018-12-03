@@ -12,6 +12,7 @@ class ScoringMainViewController: UIViewController {
 
     @IBAction func handleNewScoringRound(_ sender: UIButton) {
         let start = storyboard?.instantiateViewController(withIdentifier: "startID") as! startViewController
+        start.getPreset = false
         
         navigationController?.pushViewController(start, animated: true)
     }
